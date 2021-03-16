@@ -2,7 +2,8 @@
 
 _Proyecto de app en Ionic Framework, con la idea de generar utilidades varias._
 
-Web app [Aqui](https://temere-tools.web.app/componentes/menu)
+Web app [Aqui](https://temere-tools.web.app/componentes/menu).
+_(Se recomienda ver en tamaño movil 📲._
 
 ## El proyecto apenas en esta en pañales.🌱
 
