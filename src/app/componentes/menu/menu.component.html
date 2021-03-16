@@ -1,0 +1,22 @@
+<ion-app style="--ion-background-color: rgb(255, 255, 255) !important;">
+  <ion-header translucent>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title style="text-align: center;">Temere!</ion-title>
+      <ion-buttons slot="end" style="visibility: hidden;">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col *ngFor="let item of botones" style="text-align: center;">
+          <button class="botonCuadrado" routerDirection="root" [routerLink]="[item.url]" lines="none" detail="false" routerLinkActive="selected">{{item.title}}</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+</ion-app>

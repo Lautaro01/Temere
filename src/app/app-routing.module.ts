@@ -1,15 +1,34 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
+import {MenuComponent} from './componentes/menu/menu.component';
+import {NumeroRandomComponent} from './componentes/numero-random/numero-random.component';
+import { SorteoComponent } from './componentes/sorteo/sorteo.component';
+
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/Inbox',
+    redirectTo: 'componentes/menu',
     pathMatch: 'full'
   },
   {
-    path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+    path: 'componentes/menu',
+    component: MenuComponent,
+  }
+  ,
+  {
+    path: 'componentes/numerorandom',
+    component: NumeroRandomComponent,
+  }
+  ,
+  {
+    path: 'componentes/sorteo',
+    component: SorteoComponent,
+  }
+  ,
+  {
+    path: 'componentes/menu',
+    component: MenuComponent,
   }
 ];
 

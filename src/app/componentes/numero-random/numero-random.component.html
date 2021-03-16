@@ -1,0 +1,38 @@
+<ion-app style="--ion-background-color: rgb(255, 255, 255) !important;">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title style="text-align: center;">Numero Aleatorio</ion-title>
+      <ion-buttons slot="primary">
+        <!-- <ion-button [routerLink]="['/componentes/menu']">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+        </ion-button> -->
+        <ion-back-button defaultHref="/"></ion-back-button>
+      </ion-buttons>
+      
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-grid>
+      <ion-row style="padding-top: 10%; padding-bottom: 10%;">
+        <ion-col style="text-align: center;">
+          <div class="numberContent">
+            {{numeroRandomVar}}
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col style="text-align: center;">
+          <ion-button (click)="numeroRandom()" style="color: rgb(0, 195, 209); --background:#333;">
+              Generar
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+</ion-app>
