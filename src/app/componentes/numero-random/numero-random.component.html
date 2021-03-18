@@ -31,7 +31,36 @@
         </ion-col>
       </ion-row>
       <ion-row>
-        
+        <ion-col sizeLg="4" style="margin: auto; padding-top: 5%;">
+          
+          <ion-list lines="full">
+            <ion-list-header lines="full">
+              <ion-label>
+                Rango
+              </ion-label>
+            </ion-list-header>
+            
+            
+            <ion-item>
+              <ion-label>Max</ion-label>
+              <ion-input type="number" name="max" [(ngModel)]="numeroMaximo"></ion-input>
+            </ion-item>
+            
+            <ion-item>
+              <ion-label>Min</ion-label>
+              <ion-input type="number" name="min" [(ngModel)]="numeroMinimo"></ion-input>
+            </ion-item>
+            
+            
+          </ion-list>
+        </ion-col>
+        <!-- <div class="inputContent">
+          <ion-item>
+            <ion-label>Max</ion-label>
+            <ion-input type="number" id="max" name="max" [(ngModel)]="numeroMaximo"></ion-input>
+            <input type="number" id="max" name="max" [(ngModel)]="numeroMaximo" class="inputNumber">
+          </ion-item>
+        </div> -->
       </ion-row>
     </ion-grid>
   </ion-content>
