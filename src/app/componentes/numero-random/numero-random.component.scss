@@ -1,6 +1,8 @@
 .numberContent{
-    height: 100px;
-    width: 100px;
+    // max-height: 100px;
+    // max-width: 100px;
+    // min-height: 200px;
+    // min-width: 200px;
     background-color: #333;
     margin: auto;
     display: flex;
@@ -8,6 +10,11 @@
     justify-content: center;
     border-radius: 10px;
     box-shadow: 5px -5px 2px rgb(0, 169, 175);
+    font-size: 8rem;
+    position: relative;
+    animation-duration: 0.5s;
+    animation-name: example;
+    animation-timing-function: ease-in;
 }
 
 .inputContent{
@@ -21,6 +28,7 @@
     justify-content: center;
     border-radius: 10px;
     box-shadow: 5px 5px 2px rgb(0, 169, 175);
+
 }
 
 .inputNumber{
@@ -30,4 +38,23 @@
     border: none;
     border-radius: 5px;
     max-width: 100px;
+}
+
+
+@keyframes example {
+    // from {background-color: rgb(131, 131, 131)}
+    // to {background-color: #333}
+    0% {left: 100px;}
+    50%{left: -10px;}
+    75%{left: 10px;}
+    100% {left: 0px;}
+  }
+
+
+@media(max-width: 990px){
+    .numberContent{
+        height: 100px;
+        width: 100px;
+        font-size: 3rem;
+    }
 }

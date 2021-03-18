@@ -2,8 +2,25 @@
     background-color: #333;
     color: white;
     border-radius: 30px;
-    width: 100px;
-    height: 100px;
-    font-size: 1.3em;
+    min-width: 250px;
+    min-height: 250px;
+    font-size: 2em;
     border-radius: 10px;
+    transition: 0.3s;
+}
+
+.botonCuadrado:hover{
+    transition: 0.3s;
+    background-color: rgb(78, 78, 78);
+    color: rgb(0, 175, 175);
+    box-shadow: 5px 5px rgb(0, 169, 175);
+}
+
+
+@media(max-width: 990px){
+    .botonCuadrado{
+        min-width: 100px;
+        min-height: 100px;
+        font-size: 1em;
+    }
 }

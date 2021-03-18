@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class MenuComponent implements OnInit {
 
   public botones = [
-    { title: 'Numero Random', url: '/componentes/numerorandom'},
+    { title: 'Numero Aleatorio', url: '/componentes/numerorandom'},
     { title: 'Sorteo', url: '/componentes/sorteo'},
     // { title: 'Archived', url: '/folder/Archived', icon: 'archive' },
     // { title: 'Trash', url: '/folder/Trash', icon: 'trash' },

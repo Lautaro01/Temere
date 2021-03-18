@@ -19,7 +19,7 @@ export class NumeroRandomComponent implements OnInit {
     console.log(this.numeroMaximo);
     if(this.numeroMaximo - this.numeroMinimo < 0)
     {
-      this.presentToastWithOptions("Eso da negativo, no tiene sentido hacer esto.");
+      this.presentToastWithOptions("Eso da negativo, no tiene sentido hacer esto.s");
 
     }else if (this.numeroMaximo - this.numeroMinimo == 0 )
     {

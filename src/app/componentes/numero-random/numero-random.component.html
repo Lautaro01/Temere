@@ -1,4 +1,4 @@
-<ion-app style="--ion-background-color: rgb(255, 255, 255) !important;">
+<ion-app style="--ion-background-color: rgb(255, 255, 255) !important;" class="p">
   <ion-header>
     <ion-toolbar>
       <ion-buttons slot="start">
@@ -17,15 +17,15 @@
   <ion-content>
     <ion-grid>
       <ion-row style="padding-top: 10%; padding-bottom: 10%;">
-        <ion-col style="text-align: center;">
-          <div class="numberContent">
+        <ion-col style="text-align: center; margin: auto;" size="4">
+          <div class="numberContent p">
             {{numeroRandomVar}}
           </div>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col style="text-align: center;">
-          <ion-button (click)="numeroRandom()" style="color: rgb(0, 195, 209); --background:#333;">
+          <ion-button (click)="numeroRandom()" style="color: rgb(0, 195, 209); --background:#333; height: 75px; font-size: 2em;">
               Generar
           </ion-button>
         </ion-col>
