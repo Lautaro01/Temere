@@ -1,0 +1,37 @@
+ion-button {
+    --color: rgb(0, 195, 209);
+    --background:#333;
+    height: 75px;
+    font-size: 1em;
+}
+
+.inputTemere{
+    background: #333;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    font-size: 1.3em;
+    border: 3px solid rgb(255, 255, 255);
+    transition: 0.3s;
+    margin-bottom: 5px;
+    outline: none;
+}
+
+.inputTemere:hover{
+    transition: 0.3s;
+    border: 3px solid rgb(0, 170, 165);
+    outline: none;
+}
+
+.contentSorteo{
+    text-align: center;
+    color: white;
+    width: 300px; 
+    background-color: #333;
+    margin: auto;
+    border-radius: 10px;
+    padding: 3px 5px 5px 5px;
+    box-shadow: 5px -5px rgb(0, 169, 175);
+    font-size: 8rem;
+    margin-top: 10%;
+}
