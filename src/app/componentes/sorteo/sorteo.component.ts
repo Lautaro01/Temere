@@ -26,20 +26,25 @@ export class SorteoComponent implements OnInit {
   ngOnInit() {
   }
 
-  agregarParticipante()
+  async agregarParticipante()
   {
     let participanteNuevo = {
       id : this.participantes.length + 1,
       nombre : ""
     }
 
-    this.participantes.push(participanteNuevo)
+    await this.participantes.push(participanteNuevo);
+
+    await this.goEnd();
+
   }
 
-  sortear()
-  {
+  goEnd(){
+    let elemento = document.getElementById("divTabla");
+    elemento.scrollTop = 99999;
+  }
 
-
+  sortear(){
 
     for (let i = 1; i <= this.participantes.length; i++) {
 
@@ -64,19 +69,8 @@ export class SorteoComponent implements OnInit {
 
   numeroRandom(maximo : number, minimo : number) {
 
-    if(maximo - minimo < 0)
-    {
-      // this.presentToastWithOptions("Eso da negativo, no tiene sentido hacer esto.s");
+    var numeroRandomVar = Math.floor((Math.random() * (maximo - minimo + 1)) + minimo).toString();
 
-    }else if (maximo - minimo == 0 )
-    { 
-      // this.presentToastWithOptions("El maximo y el minimo no pueden ser iguales.");
-    }
-    else
-    {
-      var numeroRandomVar = Math.floor((Math.random() * (maximo - minimo + 1)) + minimo).toString();
-    }
-    
     return numeroRandomVar;
 }
 

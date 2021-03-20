@@ -35,3 +35,24 @@ ion-button {
     font-size: 8rem;
     margin-top: 10%;
 }
+
+.h1Temere{
+    color: rgb(44, 44, 44);
+    font-size: 2em;
+}
+
+.divTabla{
+    overflow-y:auto;
+    height:500px;
+}
+
+table thead{
+
+}
+@media(max-width:600px){
+    .divTabla{
+        overflow-y:auto;
+        height: 300px;
+    }
+
+}
