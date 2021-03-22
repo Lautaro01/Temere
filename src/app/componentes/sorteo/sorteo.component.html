@@ -17,7 +17,7 @@
     <ion-grid>
       <ion-row>
 
-      <!-- Col lista de partisipantes -->
+      <!-- Col lista de participantes -->
       <ion-col size="12" sizeSm="6">
         <h1 style="color: black; text-align: center;">Participante</h1>
         <div class="divTabla" id="divTabla">
@@ -27,6 +27,9 @@
                 <th class="h1Temere">{{item.id}}</th>
                 <td>
                   <input type="text" name="participante" id={{item.id}} class="inputTemere" value=''>
+                </td>
+                <td>
+                  <ion-icon name="trash" class="iconRemove" (click)="quitarParticipante(item.id)"></ion-icon>
                 </td>
               </tr>
             </tbody>
@@ -47,7 +50,12 @@
                 <ion-button expand="block" (click)="sortear()">
                   ¡Sortear!
                 </ion-button>
+
               </ion-col>
+              <ion-item style="margin: auto; color: rgb(0, 170, 165);">
+                <ion-label>Agregar por cantidad</ion-label>
+                <ion-input type="number" style="text-align: center;" id="inputNumeroSelect"></ion-input>
+              </ion-item>
             </ion-row>
           </ion-grid>
       </ion-col>
@@ -58,6 +66,9 @@
           <h1 style="border-bottom: 1px solid rgb(0, 170, 165); padding-bottom: 20px;">GANADOR</h1>
           
           <h1>{{ganador}}</h1>
+        </div>
+        <div class="contentSorteo">
+          <h2>Cantidad de participantes: <strong>{{participantes.length}}</strong></h2>
         </div>
       </ion-col>
 

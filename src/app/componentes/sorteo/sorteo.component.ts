@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-sorteo',
   templateUrl: './sorteo.component.html',
@@ -24,18 +25,41 @@ export class SorteoComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    const input = (<HTMLInputElement>document.getElementById("inputNumeroSelect"));
+    input.addEventListener("input",()=>{
+      this.agregarParticipante(input.value);
+    });
   }
 
-  async agregarParticipante()
+  agregarParticipante(cantiad?)
   {
-    let participanteNuevo = {
-      id : this.participantes.length + 1,
-      nombre : ""
+    if(cantiad){
+      this.participantes = [];
+
+      for (let i = 0; i < cantiad; i++) {
+        let participanteNuevo = {
+          id : this.participantes.length + 1,
+          nombre : ""
+        }
+        
+        this.participantes.push(participanteNuevo);
+      }
     }
+    else
+    {
+      if(cantiad !=0)
+      {
 
-    await this.participantes.push(participanteNuevo);
-
-    await this.goEnd();
+        let participanteNuevo = {
+          id : this.participantes.length + 1,
+          nombre : ""
+        }
+        
+        this.participantes.push(participanteNuevo);
+      }
+    }
+      
+    this.goEnd();
 
   }
 
@@ -65,6 +89,15 @@ export class SorteoComponent implements OnInit {
     let numero = this.numeroRandom((this.participantes.length-1),0)
     this.ganador = this.participantes[numero].nombre
     console.log( "Ganador " + this.participantes[numero].nombre + " Numero de jugadores: " + this.participantes.length);
+  }
+
+  quitarParticipante(id : number){
+    this.participantes.splice((id-1),1);
+
+    for (let i = 0; i < this.participantes.length; i++) {
+      this.participantes[i].id = (i+1);
+    }
+
   }
 
   numeroRandom(maximo : number, minimo : number) {

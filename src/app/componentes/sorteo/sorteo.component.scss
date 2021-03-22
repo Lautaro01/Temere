@@ -17,6 +17,18 @@ ion-button {
     outline: none;
 }
 
+.inputTemereNumber{
+    background: #333;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    font-size: 1em;
+    border: 3px solid rgb(255, 255, 255);
+    transition: 0.3s;
+    margin-bottom: 5px;
+    outline: none;
+}
+
 .inputTemere:hover{
     transition: 0.3s;
     border: 3px solid rgb(0, 170, 165);
@@ -48,11 +60,24 @@ ion-button {
 
 table thead{
 
+
 }
+
+.iconRemove{
+    font-size: 2em;
+    color:#333;
+    transition: 0.3s;
+}
+
+.iconRemove:hover{
+    transition: 0.3s;
+    // font-size: 2em;
+    color:rgb(211, 0, 0);
+}
+
 @media(max-width:600px){
     .divTabla{
         overflow-y:auto;
         height: 300px;
     }
-
 }
