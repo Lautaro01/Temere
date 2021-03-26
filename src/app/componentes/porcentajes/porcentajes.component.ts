@@ -18,8 +18,6 @@ export class PorcentajesComponent implements OnInit {
 
     document.getElementById("calcular1").addEventListener("click",this.calcularProcentaje);
     document.getElementById("calcular2").addEventListener("click",this.calcularProcentaje2);
-
-
   }
 
   calcularProcentaje()
