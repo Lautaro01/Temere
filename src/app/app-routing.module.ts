@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
-import {MenuComponent} from './componentes/menu/menu.component';
-import {NumeroRandomComponent} from './componentes/numero-random/numero-random.component';
+import { MenuComponent} from './componentes/menu/menu.component';
+import { NumeroRandomComponent} from './componentes/numero-random/numero-random.component';
+import { PorcentajesComponent } from './componentes/porcentajes/porcentajes.component';
 import { SorteoComponent } from './componentes/sorteo/sorteo.component';
 
 const routes: Routes = [
@@ -29,6 +30,10 @@ const routes: Routes = [
   {
     path: 'componentes/menu',
     component: MenuComponent,
+  },
+  {
+    path: 'componentes/porcentajes',
+    component: PorcentajesComponent,
   }
 ];
 

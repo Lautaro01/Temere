@@ -9,7 +9,7 @@ export class AppComponent {
     { title: 'Menu Principal', url: '/componentes/menu', icon: 'mail' },
     { title: 'Numero Aleatorio', url: '/componentes/numerorandom', icon: 'paper-plane' },
     { title: 'Sorteo', url: '/componentes/sorteo', icon: 'heart' },
-    // { title: 'Archived', url: '/folder/Archived', icon: 'archive' },
+    { title: 'Porcentajes', url: '/componentes/porcentajes', icon: 'archive' },
     // { title: 'Trash', url: '/folder/Trash', icon: 'trash' },
     // { title: 'Spam', url: '/folder/Spam', icon: 'warning' },
   ];

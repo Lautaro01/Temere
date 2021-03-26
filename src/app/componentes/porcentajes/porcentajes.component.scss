@@ -1,0 +1,79 @@
+.contentSorteo{
+    text-align: center;
+    color: white;
+    max-width: 600px; 
+    background-color: #333;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    box-shadow: 5px -5px rgb(0, 169, 175);
+    font-size: 2em;
+    margin-top: 10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputNumero{
+    margin-left: 10px;
+    background: rgb(163, 163, 163);
+    color: white;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid rgb(255, 255, 255);
+    transition: 0.3s;
+    margin-bottom: 5px;
+    outline: none;
+    font-size: 1em;
+    
+    width: 150px;
+    height: 50px;
+ 
+}
+
+.inputPorcentaje{
+
+   font-size: 1em;
+   width: 100px;
+   height: 50px;
+
+   margin-left: 10px;
+   background: rgb(163, 163, 163);
+   color: white;
+   border-radius: 10px;
+   padding: 10px 10px 10px 10px;
+   border: 1px solid rgb(255, 255, 255);
+   transition: 0.3s;
+   margin-bottom: 5px;
+   outline: none;
+
+
+}
+
+.inputPorcentaje:hover{
+    transition: 0.3s;
+    border: 1px solid rgb(0, 170, 165);
+    outline: none;
+}
+
+@media(max-width:570px)
+{
+    .contentSorteo{
+        text-align: center;
+        color: white;
+        max-width: 600px; 
+        background-color: #333;
+        margin: auto;
+        border-radius: 10px;
+        padding: 10px 20px 10px 20px;
+        padding-bottom: 50px;
+        box-shadow: 5px -5px rgb(0, 169, 175);
+        font-size: 1.5em;
+        margin-top: 10%;
+    
+        display:list-item;
+        justify-content: center;
+        align-items: center;
+    }
+}

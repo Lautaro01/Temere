@@ -10,7 +10,7 @@ export class MenuComponent implements OnInit {
   public botones = [
     { title: 'Numero Aleatorio', url: '/componentes/numerorandom'},
     { title: 'Sorteo', url: '/componentes/sorteo'},
-    // { title: 'Archived', url: '/folder/Archived', icon: 'archive' },
+    { title: 'Porcentajes', url: '/componentes/porcentajes', icon: 'archive' },
     // { title: 'Trash', url: '/folder/Trash', icon: 'trash' },
     // { title: 'Spam', url: '/folder/Spam', icon: 'warning' },
   ];

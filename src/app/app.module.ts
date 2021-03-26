@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { MenuComponent} from "./componentes/menu/menu.component";
 import { NumeroRandomComponent } from './componentes/numero-random/numero-random.component';
 import { SorteoComponent } from './componentes/sorteo/sorteo.component';
+import { PorcentajesComponent } from "./componentes/porcentajes/porcentajes.component";
 //-----//
 import { AppRoutingModule } from './app-routing.module';
 
@@ -19,7 +20,8 @@ import { AppRoutingModule } from './app-routing.module';
   declarations: [AppComponent,
   MenuComponent,
   NumeroRandomComponent,
-  SorteoComponent],
+  SorteoComponent,
+  PorcentajesComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,FormsModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
