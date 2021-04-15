@@ -13,11 +13,10 @@
   <ion-content>
     <ion-grid>
       <ion-row>
-        <!-- <button id="hola">hola</button> -->
-        <ion-col *ngFor="let item of botones" style="text-align: center;">
-          <button id={{item.id}} class="botonCuadrado" routerDirection="root" [routerLink]="[item.url]" lines="none" detail="false" routerLinkActive="selected">{{item.title}}</button>
-        </ion-col>
-      </ion-row>
+          <ion-col *ngFor="let item of botones" style="text-align: center;">
+            <button #buttons class="botonCuadrado" [routerLink]="[item.url]" muted autoplay >{{item.title}}</button>
+          </ion-col>
+        </ion-row>
     </ion-grid>
   </ion-content>
 </ion-app>

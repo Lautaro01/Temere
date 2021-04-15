@@ -6,7 +6,7 @@
       </ion-buttons>
       <ion-title style="text-align: center;">Porcentajes</ion-title>
       <ion-buttons slot="primary">
-        <ion-button [routerLink]="['/componentes/menu']">
+        <ion-button [routerLink]="['/componentes/']">
           <ion-icon name="arrow-back-outline"></ion-icon>
         </ion-button>
       </ion-buttons>
@@ -18,27 +18,43 @@
         <ion-col>
 
           <div class="contentSorteo">
-            Calcular el
-            <input type="number" id="porcentaje1" class="inputPorcentaje">
-            <p style="margin-right: 10px; color: rgb(0, 170, 165);">%</p>
-            de
-            <input type="number" id="numero1" class="inputNumero">
-            <button id="calcular1" style="margin-left: 10px;">Calcular</button>
+            <h1>Calcular Porcentaje</h1>
+            <div>
+              <div>
+                <input type="number" id="porcentaje1" class="inputPorcentaje"><span style="font-size: 1.5rem; color: rgb(0, 145, 145);">%</span>
+              </div>
+              <h1>de</h1>
+              <input type="number" id="numero1" class="inputNumero">
+              <ion-button id="calcular1" style="--background: rgb(0, 195, 209); color:#333; font-size: 1em;">
+                Calcular
+              </ion-button>
+            </div>
+              <p class="ejemplo">Ejemplo: el 50% de 100 es 50</p>
           </div>
 
           <div class="contentSorteo">
-            <select name="aod" id="aod">
-              <option value="a" selected>Aumentar</option>
-              <option value="d" >Disminuir</option>
-              <!-- <option value="value3">Value 3</option> -->
-            </select>
-            el
-            <input type="number" id="porcentaje2" class="inputPorcentaje">
-            <p style="margin-right: 10px; color: rgb(0, 170, 165);">%</p>
-            a
-            <input type="number" id="numero2"class="inputNumero">
+            <div>
+              <h1>
+                <select name="aod" id="aod" style="font-size: 1.5rem;">
+                  <option value="a" selected>Aumentar</option>
+                  <option value="d" >Disminuir</option>
+                </select>
+                Porcentaje
+              </h1>
+            </div>
+            
 
-            <button id="calcular2">Calcular</button>
+            <div>
+              <div>
+                <input type="number" id="porcentaje2" class="inputPorcentaje"><span style="font-size: 1.5rem; color: rgb(0, 145, 145);">%</span>
+              </div>
+              <h1>a</h1>
+              <input type="number" id="numero2"class="inputNumero">
+              <ion-button id="calcular2" style="--background: rgb(0, 195, 209); color:#333; font-size: 1em;">
+                Calcular
+              </ion-button>
+            </div>
+            <p class="ejemplo">Ejemplo: aumentar el 21% a 500 es 605</p>
           </div>
 
         </ion-col>

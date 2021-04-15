@@ -6,24 +6,21 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
 import { AppComponent } from './app.component';
-//Componentes creados
-import { MenuComponent} from "./componentes/menu/menu.component";
-import { NumeroRandomComponent } from './componentes/numero-random/numero-random.component';
-import { SorteoComponent } from './componentes/sorteo/sorteo.component';
-import { PorcentajesComponent } from "./componentes/porcentajes/porcentajes.component";
+
 //-----//
 import { AppRoutingModule } from './app-routing.module';
+import { ComponentesModule } from './componentes/componentes.module';
 
 
 
 @NgModule({
-  declarations: [AppComponent,
-  MenuComponent,
-  NumeroRandomComponent,
-  SorteoComponent,
-  PorcentajesComponent],
+  declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,FormsModule],
+  imports: [BrowserModule,
+    IonicModule.forRoot(), 
+    AppRoutingModule,
+    FormsModule,
+    ComponentesModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })

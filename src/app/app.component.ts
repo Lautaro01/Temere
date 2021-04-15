@@ -6,12 +6,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Menu Principal', url: '/componentes/menu', icon: 'mail' },
+    { title: 'Menu Principal', url: '/componentes', icon: 'mail' },
     { title: 'Numero Aleatorio', url: '/componentes/numerorandom', icon: 'paper-plane' },
     { title: 'Sorteo', url: '/componentes/sorteo', icon: 'heart' },
     { title: 'Porcentajes', url: '/componentes/porcentajes', icon: 'archive' },
-    // { title: 'Trash', url: '/folder/Trash', icon: 'trash' },
-    // { title: 'Spam', url: '/folder/Spam', icon: 'warning' },
   ];
 
   constructor() {}
